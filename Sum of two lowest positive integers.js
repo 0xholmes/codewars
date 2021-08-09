@@ -7,4 +7,4 @@ function sumTwoSmallestNumbers(numbers) {
 // numbers.sort((a, b) => a - b)
 
 // Descending
-// numbers.sort((a, b) => a + b)
+// numbers.sort((a, b) => b - a)
