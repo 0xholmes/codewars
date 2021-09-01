@@ -1,3 +1,5 @@
+// Link to the kata: https://www.codewars.com/kata/5810085c533d69f4980001cf
+
 // long solution
 function calculator(a, b, sign) {
   if (typeof a === "number" && typeof b === "number") {
