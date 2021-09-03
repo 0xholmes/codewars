@@ -20,3 +20,11 @@ function abbrevName(name){
   const regex = /\b\w/g
   return name.match(regex).join(".").toUpperCase()
 }
+
+// 4th
+function abbrevName(name){
+  return name.match(/\b\w/g).join(".").toUpperCase()
+}
+
+// 5th
+const abbrevName = (name) => name.match(/\b\w/g).join(".").toUpperCase()
