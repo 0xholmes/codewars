@@ -14,3 +14,9 @@ function abbrevName(name){
   const fl = (words[0][0] + "." + words[1][0]).toUpperCase()
   return fl
 }
+
+// 3rd
+function abbrevName(name){
+  const regex = /\b\w/g
+  return name.match(regex).join(".").toUpperCase()
+}
