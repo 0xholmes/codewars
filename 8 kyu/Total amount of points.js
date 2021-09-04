@@ -58,3 +58,19 @@ const points = (games) => {
     return  acc
   }, 0)
 }
+
+// 5th
+const points = (games) => {
+  return games.reduce((acc, game) => {
+    const [x, y] = game.split(":")
+    const points = x > y ? 3 : x < y ? 0 : 1
+    acc += points
+    return acc
+  }, 0)
+}
+
+// 6th
+const points = (games) => games.reduce((acc, game) => {
+    const [x, y] = game.split(":")
+    return acc += x > y ? 3 : x < y ? 0 : 1
+}, 0)
