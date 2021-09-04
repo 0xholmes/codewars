@@ -47,3 +47,14 @@ const points = (games) => {
   
   return points
 }
+
+// 4th
+const points = (games) => {
+  return games.reduce((acc, game) => {
+    const x = game[0]
+    const y = game[2]
+    const points = x > y ? 3 : x < y ? 0 : 1
+    acc += points
+    return  acc
+  }, 0)
+}
