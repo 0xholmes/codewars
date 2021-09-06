@@ -2,8 +2,9 @@
 
 function incrementString (str) {
   return str.replace(/\d*$/, match => {
-    if (!match) return '1'
-    const numStr = String(parseInt(match) + 1)
+    // console.log(match) // will get "000", the type is string
+    if (!match) return '1' // if there's no numbers then add "1"
+    const numStr = String(parseInt(match) + 1) // parse the match to integer, plus 1, then parse it back to a string
     const diff = match.length - numStr.length
     return diff > 0
       ? '0'.repeat(diff) + numStr
