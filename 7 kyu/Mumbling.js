@@ -2,8 +2,8 @@
 
 // Map
 const accum = (s) => {
-  return [...s].map((char, idx) => (char.toUpperCase() + char.toLowerCase().repeat(idx))).join("-")
+  return [...s].map((char, idx) => char.toUpperCase() + char.toLowerCase().repeat(idx)).join("-")
 }
 
 // one line map
-const accum = (s) => [...s].map((char, idx) => (char.toUpperCase() + char.toLowerCase().repeat(idx))).join("-")
+const accum = (s) => [...s].map((char, idx) => char.toUpperCase() + char.toLowerCase().repeat(idx)).join("-")
