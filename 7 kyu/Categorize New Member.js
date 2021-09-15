@@ -13,6 +13,13 @@ const openOrSenior = (data) => {
   return result
 }
 
+// forEach #2
+const openOrSenior = (data) => {
+  let result = []
+  data.forEach(d => (d[0] >= 55 && d[1] > 7) ? result.push('Senior') : result.push('Open'))
+  return result
+}
+
 // map
 const openOrSenior = (data) => {
   return data.map(d => {
