@@ -31,6 +31,9 @@ const openOrSenior = (data) => {
   })
 }
 
+// map #2
+const openOrSenior = (data) => data.map(d => (d[0] >= 55 && d[1] > 7) ? 'Senior' : 'Open')
+
 // destructuring: [age, handicap] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 const openOrSenior = (data) => {
   return data.map(([age, handicap]) => (age >= 55 && handicap > 7) ? "Senior" : "Open")
