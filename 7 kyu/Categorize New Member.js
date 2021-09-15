@@ -28,3 +28,6 @@ const openOrSenior = (data) => {
 const openOrSenior = (data) => {
   return data.map(([age, handicap]) => (age >= 55 && handicap > 7) ? "Senior" : "Open")
 }
+
+// one line destructuring
+const openOrSenior = (data) => data.map(([age, handicap]) => age > 54 && handicap > 7 ? 'Senior' : 'Open')
